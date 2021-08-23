@@ -21,10 +21,13 @@ li {
   text-align: center;
   margin: 0;
   padding: 0;
-  text-transform: capitalize;
   font-size: 12px;
   font-weight: 100;
   line-height: 15px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
 }
 
 .weather-app {
