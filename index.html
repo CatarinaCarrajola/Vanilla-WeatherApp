@@ -18,6 +18,21 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  class="form-conrol"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input type="Submit" value="Search" class="btn btn-primary" />
+              </div>
+            </div>
+          </form>
           <h1 id="city"></h1>
           <ul>
             <li>Last updated at <span id="date"></span></li>
