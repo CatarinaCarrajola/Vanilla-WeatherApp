@@ -10,6 +10,7 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -17,10 +18,10 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <h1>Oslo</h1>
+          <h1 id="city"></h1>
           <ul>
             <li>Friday 14:20</li>
-            <li>Clear</li>
+            <li id="description"></li>
           </ul>
           <br />
           <div class="row">
@@ -30,13 +31,13 @@
                 src="https://simpleicon.com/wp-content/uploads/sun.png"
                 alt="Clear"
               />
-              18° C | °F
+              <strong id="temperature"></strong> °C | °F
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 50%</li>
-                <li>Wind: 1 km/h</li>
+                <li>Precipitation:</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
             </div>
           </div>
