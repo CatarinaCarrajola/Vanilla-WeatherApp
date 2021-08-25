@@ -36,11 +36,6 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-#celsius-link,
-#fahrenheit-link {
-  text-decoration: none;
-}
-
 .form {
   opacity: 0.5;
   display: block;
